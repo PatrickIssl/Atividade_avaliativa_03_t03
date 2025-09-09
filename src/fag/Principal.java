@@ -3,8 +3,7 @@ package fag;
 public class Principal {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		System.out.println("ola mundo em portugues e claro hehehehe");
 	}
 
 }
