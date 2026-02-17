@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Questao1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int idade;
+        String nome;
+        String cpf;
+        
+        System.out.print("digite sua idade: ");
+        idade = sc.nextInt();
+        sc.nextLine();
+        
+        System.out.print("digite seu nome: ");
+        nome = sc.nextLine();
+        
+        System.out.print("digite seu cpf: ");
+        cpf = sc.nextLine();
+        
+        System.out.println("idade informada:" + idade);
+        System.out.println("nome informado: " + nome);
+        System.out.println("cpf informado: " + cpf);
+    }
+}

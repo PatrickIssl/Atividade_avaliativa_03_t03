@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class AtivMedia {
+    public static void main (String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        float Media = 0, Nota2 = 0, Nota = 0;
+
+        System.out.println("_-_-Sistema de Me'dias-_-_");
+
+        for(float j=1;j<=3; j++){
+
+            System.out.println("\n Nome do estudante: ");
+            String name = scanner.nextLine();
+            Nota2=0;
+            for(float i=1;i<=3; i++){
+
+                System.out.println("\n Qual é a " + i + "° nota?" );
+                Nota = scanner.nextFloat();
+
+                Nota2 = Nota2+Nota;
+
+            }
+
+            Media = Nota2/3;
+            System.out.println("\nA media e': " + Media);
+            scanner.nextLine();
+
+            if(Media>=7){
+                System.out.println("Aprovado");
+            }
+            else{
+                System.out.println("Reprovado");
+            }
+        }
+    }
+}
